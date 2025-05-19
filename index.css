@@ -366,20 +366,20 @@ a {
 }
 
 .section-details {
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 20px;
     background: var(--section-bg);
-    border-radius: 20px;
-    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
-    flex: 1;
-    position: relative;
-    height: 100vh;
-    min-height: 0;
-    overflow: hidden;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+    border-radius: 15px;
+    padding: 30px;
+    margin: 20px 0;
+    box-shadow: 0 4px 6px var(--card-shadow);
+}
+
+.hobbies-intro {
+    color: var(--showcase-desc);
+    font-size: 1.1em;
+    margin-bottom: 25px;
+    line-height: 1.6;
+    text-align: center;
+    font-weight: 500;
 }
 
 .section-content {
