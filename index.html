@@ -5,160 +5,189 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Web Portfolio</title>
     <link rel="stylesheet" href="./index.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
 <body>
-    
     <nav class="navbar">
         <div class="logo-container">
-            <img src="logo.jpg" class="logo-img">
-            <a href="#" class="logo">Portfolio</a>
+            <img src="logo.jpg" alt="Logo" class="logo-img">
+            <a href="#" class="logo">Web Portfolio</a>
         </div>
         <ul>
-            <li><a href="#home" class="home">Home</a></li>
-            <li><a href="#about" class="about">About Me</a></li>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#about">About</a></li>
         </ul>
+        <div class="theme-switch-wrapper">
+            <label class="theme-switch" for="checkbox">
+                <input type="checkbox" id="checkbox" />
+                <div class="slider round">
+                    <i class="fas fa-sun"></i>
+                    <i class="fas fa-moon"></i>
+                </div>
+            </label>
+        </div>
+        <button id="muteButton" class="mute-button" aria-label="Mute/Unmute">
+            <span class="mute-icon">
+                <svg id="icon-unmuted" xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="white"><path d="M16.5 12c0-1.77-1.02-3.29-2.5-4.03v8.06A4.978 4.978 0 0 0 16.5 12zm2.5 0c0 2.76-2.24 5-5 5v2c3.87 0 7-3.13 7-7s-3.13-7-7-7v2c2.76 0 5 2.24 5 5zM4 9v6h4l5 5V4L8 9H4z"/></svg>
+                <svg id="icon-muted" style="display:none;" xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="white"><path d="M16.5 12c0-1.77-1.02-3.29-2.5-4.03v8.06A4.978 4.978 0 0 0 16.5 12zm2.5 0c0 2.76-2.24 5-5 5v2c3.87 0 7-3.13 7-7 0-1.07-.28-2.08-.77-2.95l-1.45 1.45c.14.48.22.99.22 1.5zM4 9v6h4l5 5V4l-5 5H4zm16.19 2.19l-1.41-1.41-1.41 1.41-1.41-1.41-1.41 1.41 1.41 1.41-1.41 1.41 1.41 1.41 1.41-1.41 1.41 1.41 1.41-1.41-1.41-1.41z"/></svg>
+            </span>
+        </button>
         <div class="social-icons" id="contact">
             <a href="mailto:cristobal.laurence04@gmail.com" target="_blank">
-                <img src="envelope-solid-24.png" alt="email">
+                <img src="envelope-solid-24.png" alt="Email">
             </a>
             <a href="https://facebook.com/MatthewSnclr/" target="_blank">
-                <img src="facebook-circle-logo-24.png" alt="facebook"></a>
+                <img src="facebook-circle-logo-24.png" alt="Facebook">
+            </a>
             <a href="https://discordapp.com/users/anichama" target="_blank">
-                <img src="discord-alt-logo-24.png" alt="discord">
+                <img src="discord-alt-logo-24.png" alt="Discord">
             </a>
         </div>
     </nav>
-        
+    <audio id="bgMusic" loop>
+        <source src="ブルーアーカイブ Blue Archive OST 152.mp3" type="audio/mpeg">
+    </audio>
     <section class="homebase" id="home">
         <div class="home-info">
             <h1>Laurence Cristobal</h1>
-            <h2>Hi, I'm an aspiring 
-                <span data-text="Software Engineer">Software Engineer</span>
-            </h2>
+            <h2>Hi, I'm an aspiring <span data-text="Software Engineer">Software Engineer</span></h2>
             <div>
-                <a href="Laurence mendoza cristobal.pdf" download="Laurence_mendoza_cristobal.pdf" class="button">Download CV</a>
+                <a href="Laurence mendoza cristobal.pdf" download="Laurence_mendoza_cristobal.pdf" class="button">Download Resume</a>
             </div>
         </div>
-
         <div class="home-img">
             <div class="img-box">
                 <div class="img-item">
-                    <img src="Img.png">
+                    <img src="Pic.jpg" alt="Profile Picture">
                 </div>
             </div>
         </div>
     </section>
-
+    <section class="skills" id="skills">
+        <div class="about-info">
+            <h2>Skills</h2>
+        </div>
+        <div class="skills-container">
+            <div class="skill-category">
+                <h3>Programming Languages</h3>
+                <div class="skill-items">
+                    <div class="skill-item">
+                        <i class="fab fa-js"></i>
+                        <span>JavaScript</span>
+                    </div>
+                    <div class="skill-item">
+                        <i class="fab fa-html5"></i>
+                        <span>HTML5</span>
+                    </div>
+                    <div class="skill-item">
+                        <i class="fab fa-css3-alt"></i>
+                        <span>CSS3</span>
+                    </div>
+                </div>
+            </div>
+            <div class="skill-category">
+                <h3>Tools & Technologies</h3>
+                <div class="skill-items">
+                    <div class="skill-item">
+                        <i class="fab fa-github"></i>
+                        <span>GitHub</span>
+                    </div>
+                </div>
+            </div>
+            <div class="skill-category">
+                <h3>Soft Skills</h3>
+                <div class="skill-items">
+                    <div class="skill-item">
+                        <i class="fas fa-users"></i>
+                        <span>Teamwork</span>
+                    </div>
+                    <div class="skill-item">
+                        <i class="fas fa-comments"></i>
+                        <span>Communication</span>
+                    </div>
+                    <div class="skill-item">
+                        <i class="fas fa-lightbulb"></i>
+                        <span>Problem Solving</span>
+                    </div>
+                    <div class="skill-item">
+                        <i class="fas fa-clock"></i>
+                        <span>Time Management</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
     <section class="about-me" id="about">
         <div class="about-info">
             <h2>About Me</h2>
-            <div class="sector">
-                <a href="#section1">Games</a>
-                <a href="#section2">Music</a>
-                <a href="#section3">Travelled</a>
-            </div>
+            <p class="about-desc">I am striving to learn more about being a back-end developer. I am currently studying in National College of Science and Technology. Pleased to meet you!</p>
         </div>
-        <div class="section-details">    
-            <div class="section-content" id="section1">
-                <div class="game">
-                    <p>Honkai Star Rail</p>
-                    <a class="site" href="https://hsr.hoyoverse.com/en-us/" target="_blank">
-                    <img src="star rail.jpeg" alt="Honkai Star Rail">
-                    </a>
-                </div>
-                <div class="game">
-                    <p>Zenless Zone Zero</p>
-                    <a class="site" href="https://zenless.hoyoverse.com/en-us/main" target="_blank">
-                    <img src="zzz.png" alt="Zenless Zone Zero">
-                    </a>
-                </div>
-                <div class="game">
-                    <p>Forza Horizon 4</p>
-                    <a class="site" href="https://store.steampowered.com/app/1293830/Forza_Horizon_4/" target="_blank">
-                    <img src="forza.png" alt="Forza Horizon 4">
-                    </a>
-                </div>
-                <div class="game">
-                    <p>Elden Ring</p>
-                    <a class="site" href="https://store.steampowered.com/app/1245620/ELDEN_RING/" target="_blank">
-                    <img src="eldenring.jpg" alt="Elden Ring">
-                    </a>
-                </div>
-                <div class="game">
-                    <p>NFS Unbound</p>
-                    <a class="site" href="https://store.steampowered.com/app/1846380/Need_for_Speed_Unbound/" target="_blank">
-                    <img src="unbound.jpg" alt="NFS Unbound">
-                    </a>
-                </div>
-                <div class="game">
-                    <p>GTFO</p>
-                    <a class="site" href="https://store.steampowered.com/app/493520/GTFO/" target="_blank">
-                    <img src="gtfo.png" alt="GTFO">
-                    </a>
-                </div>
+        <div class="section-details">
+            <div class="section-tabs">
+                <button class="section-tab active-tab" data-section="0">Games</button>
+                <button class="section-tab" data-section="1">Music</button>
+                <button class="section-tab" data-section="2">Travelled</button>
             </div>
-
-            <div class="section-content" id="section2">
-                <div class="music">
-                    <p>Night Dancer</p>
-                    <a class="site" href="https://open.spotify.com/track/348NF6vX0Yh22xvH0EZEro?si=b9e4827ee8dd40d2" target="_blank">
-                    <img src="nightdancer.jpg" alt="Night Dancer">
-                    </a>
+            <div class="section-content game-showcase" id="section1">
+                <button class="arrow-btn left-arrow game-arrow" aria-label="Previous Game">&#8592;</button>
+                <div class="game-list">
+                    <img src="star rail.jpeg" class="game-icon" alt="Honkai Star Rail" data-game="hsr">
+                    <img src="zzz.png" class="game-icon" alt="Zenless Zone Zero" data-game="zzz">
+                    <img src="forza.png" class="game-icon" alt="Forza Horizon 4" data-game="forza">
+                    <img src="eldenring.jpg" class="game-icon" alt="Elden Ring" data-game="elden">
+                    <img src="unbound.jpg" class="game-icon" alt="NFS Unbound" data-game="nfs">
+                    <img src="gtfo.png" class="game-icon" alt="GTFO" data-game="gtfo">
                 </div>
-                <div class="music">
-                    <p>Sunflower</p>
-                    <a class="site" href="https://open.spotify.com/track/3KkXRkHbMCARz0aVfEt68P?si=2d015c02ce454cb0" target="_blank">
-                    <img src="sunflower.jpg" alt="Sunflower">
-                    </a>
+                <div class="game-details" id="game-details">
+                    <h2 class="game-title">Honkai Star Rail</h2>
+                    <p class="game-desc">A space fantasy RPG with turn-based combat and a rich story. Explore the galaxy and uncover mysteries!</p>
+                    <a href="https://hsr.hoyoverse.com/en-us/" target="_blank" class="game-link">Official Site</a>
                 </div>
-                <div class="music">
-                    <p>Lemon</p>
-                    <a class="site" href="https://open.spotify.com/track/7Cd17G3oNQ34OWUwS8ZxfR?si=1c2ae4470fa146e8" target="_blank">
-                    <img src="lemon.jpg" alt="Lemon">
-                    </a>
+                <div class="game-image" id="game-image">
+                    <img src="star rail.jpeg" alt="Honkai Star Rail Large">
                 </div>
-                <div class="music">
-                    <p>TruE</p>
-                    <a class="site" href="https://open.spotify.com/track/56aR8fCNORk8XIrQGo75IQ?si=e13e786e567945d6" target="_blank">
-                    <img src="true.png" alt="TruE">
-                    </a>
-                </div>
-                <div class="music">
-                    <p>Moon Halo</p>
-                    <a class="site" href="https://open.spotify.com/track/7rhPtZ2nmgkrv6MCCDF2WU?si=54e2edba58434887" target="_blank">
-                    <img src="moonhalo.png" alt="Moon Halo">
-                    </a>
-                </div>
-                <div class="music">
-                    <p>Fatal</p>
-                    <a class="site" href="https://open.spotify.com/track/7gJD9BarjoFwL2BNQ0rpWT?si=ee871ba1788c4cf1" target="_blank">
-                    <img src="fatal.png" alt="Fatal">
-                    </a>
-                </div>
+                <button class="arrow-btn right-arrow game-arrow" aria-label="Next Game">&#8594;</button>
             </div>
-
-            <div class="section-content" id="section3">
-                <div class="destinations">
-                    <p>England, London</p>
-                    <a class="site" href="https://en.wikipedia.org/wiki/London" target="_blank">
-                    <img src="bigben.jpg" alt="Big Ben">
-                    </a>
+            <div class="section-content game-showcase" id="section2">
+                <button class="arrow-btn left-arrow music-arrow" aria-label="Previous Music">&#8592;</button>
+                <div class="music-list">
+                    <img src="nightdancer.jpg" class="music-icon" alt="Night Dancer" data-music="nightdancer">
+                    <img src="sunflower.jpg" class="music-icon" alt="Sunflower" data-music="sunflower">
+                    <img src="lemon.jpg" class="music-icon" alt="Lemon" data-music="lemon">
+                    <img src="true.png" class="music-icon" alt="TruE" data-music="true">
+                    <img src="moonhalo.png" class="music-icon" alt="Moon Halo" data-music="moonhalo">
+                    <img src="fatal.png" class="music-icon" alt="Fatal" data-music="fatal">
                 </div>
-                <div class="destinations">
-                    <p>Hong Kong, Disneyland</p>
-                    <a class="site" href="https://en.wikipedia.org/wiki/Hong_Kong_Disneyland" target="_blank">
-                    <img src="hkdn.jpg" alt="Hong Kong">
-                    </a>
+                <div class="music-details" id="music-details">
+                    <h2 class="music-title">Night Dancer</h2>
+                    <p class="music-desc">A catchy J-pop song by Imase that went viral for its danceable beat and emotional lyrics.</p>
+                    <a href="https://open.spotify.com/track/348NF6vX0Yh22xvH0EZEro?si=b9e4827ee8dd40d2" target="_blank" class="music-link">Listen on Spotify</a>
                 </div>
-                <div class="destinations">
-                    <p>Scotland, Edinburgh</p>
-                    <a class="site" href="https://en.wikipedia.org/wiki/Edinburgh" target="_blank">
-                    <img src="edinburgh.jpg" alt="Scotland">
-                    </a>
+                <div class="music-image" id="music-image">
+                    <img src="nightdancer.jpg" alt="Night Dancer Large">
                 </div>
+                <button class="arrow-btn right-arrow music-arrow" aria-label="Next Music">&#8594;</button>
+            </div>
+            <div class="section-content game-showcase" id="section3">
+                <button class="arrow-btn left-arrow dest-arrow" aria-label="Previous Destination">&#8592;</button>
+                <div class="dest-list">
+                    <img src="bigben.jpg" class="dest-icon" alt="Big Ben" data-dest="london">
+                    <img src="hkdn.jpg" class="dest-icon" alt="Hong Kong" data-dest="hongkong">
+                    <img src="edinburgh.jpg" class="dest-icon" alt="Scotland" data-dest="edinburgh">
+                </div>
+                <div class="dest-details" id="dest-details">
+                    <h2 class="dest-title">England, London</h2>
+                    <p class="dest-desc">The capital of England, known for its rich history, iconic landmarks like Big Ben, and vibrant culture.</p>
+                    <a href="https://en.wikipedia.org/wiki/London" target="_blank" class="dest-link">Learn More</a>
+                </div>
+                <div class="dest-image" id="dest-image">
+                    <img src="bigben.jpg" alt="Big Ben Large">
+                </div>
+                <button class="arrow-btn right-arrow dest-arrow" aria-label="Next Destination">&#8594;</button>
             </div>
         </div>
     </section>
-    
+    <script src="script.js"></script>
 </body>
 </html>
