@@ -347,7 +347,7 @@ const iconMuted = document.getElementById('icon-muted');
 
 document.addEventListener('click', () => {
     if (bgMusic.paused) {
-        bgMusic.volume = 0.05;
+        bgMusic.volume = 0.1;
         bgMusic.play();
     }
 }, { once: true });
